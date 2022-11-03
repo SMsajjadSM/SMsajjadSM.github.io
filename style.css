@@ -142,7 +142,9 @@ section{
 .git{
     transition: all 1s;
 }
-
+.logo-1 a{
+    text-decoration: none;
+}
 
 
 

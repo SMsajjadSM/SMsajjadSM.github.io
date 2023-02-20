@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+
+    .urder-list i {
+        display: none !important;
+    }
+
+    .profile-ability {
+        font-size: x-large !important;
+    }
+
+    .about-container p {
+        position: relative;
+        top: 130px;
+        margin-right: 15px !important;
+        color: var(--light-color);
+        font-size: large;
+    }
+
+    .about-set-margin h3 {
+        position: relative;
+        top: 120px !important;
+        margin: 20px 15px;
+        color: var(--light-color);
+        font-weight: 100;
+    }
+
+    .ability-container {
+        position: relative;
+        top: 25px;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+        height: 1000px;
+    }
+
+    .ability-title {
+        display: none;
+    }
+
+    .progress-element {
+        position: relative;
+        top: 20px;
+        margin: 0 0 50px 0 !important;
+    }
+
+    .name-family,
+    .email,
+    .issue,
+    textarea,
+    .submit {
+        width: 95% !important;
+        margin-right: 0 !important;
+    }
+
+    .contact-container div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit {
+        margin-top: 17px !important;
+    }
+}

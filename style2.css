@@ -1,0 +1,121 @@
+:root {
+    --light-color: #ffffff;
+}
+
+.ability-container {
+    font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 550px;
+}
+
+progress {
+    opacity: 0;
+}
+
+.progress-element {
+    width: 200px;
+    margin: 0 30px 0 0;
+}
+
+.progress-container {
+    position: relative;
+    background-color: var(--light-color);
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+}
+
+.progress-element--html .progress-container::before {
+    animation: progress-html 1s ease-in forwards;
+    background-color: #e44f26;
+}
+
+.progress-element--css .progress-container::before {
+    animation: progress-css 1s ease-in forwards;
+    background-color: #2299F8;
+}
+
+.progress-element--javascript .progress-container::before {
+    animation: progress-javascript 1s ease-in forwards;
+    background-color: #f5de19;
+}
+
+.progress-label {
+    position: relative;
+    color: var(--light-color);
+}
+
+@property --num {
+    syntax:"<integer>";
+    initial-value:0;
+    inherits: false;
+}
+
+.progress-label::after {
+    counter-reset: num var(--num);
+    content: counter(num) "%";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-element--html .progress-label::after {
+    animation: progress-text-html 1s ease-in forwards;
+}
+
+.progress-element--css .progress-label::after {
+    animation: progress-text-css 1s ease-in forwards;
+}
+
+.progress-element--javascript .progress-label::after {
+    animation: progress-text-javascript 1s ease-in forwards;
+}
+
+@keyframes progress-html {
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes progress-css {
+    to {
+        width: 95%;
+    }
+}
+
+@keyframes progress-javascript {
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes progress-text-html {
+    to {
+        --num: 95;
+    }
+}
+
+@keyframes progress-text-css {
+    to {
+        --num: 90;
+    }
+}
+
+@keyframes progress-text-javascript {
+    to {
+        --num: 50;
+    }
+}

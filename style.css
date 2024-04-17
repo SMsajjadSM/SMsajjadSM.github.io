@@ -513,7 +513,64 @@ transition: all 0.25s ease;
     display: block;
     font-size: 14px;
     font-weight: 600px;
-    
-    
-    
+    }
+    .skill-box .skill-bar{
+      height: 8px;
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 6px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+    .skill-box .skill-per{
+      position: relative;
+      display: block;
+      height: 100%;
+      width: 90%;
+      border-radius: 6px;
+      background: #8749f2;
+      animation: progress 0.4s ease-in-out forwards ;
+      opacity: 0;
+    }
+
+
+    .skill-per.html{
+      animation-delay: 0.1s;
+      width: 80%;
+      
+    }    
+    .skill-per.javascript{
+      animation-delay: 0.1s;
+      width: 80%;
+
+    }    
+    .skill-per.css{
+      animation-delay: 0.1s;
+      width: 80%;
+
+    }    
+    .skill-per.react{
+      animation-delay: 0.1s;
+      width: 80%;
+
+    }
+     @keyframes progress{
+      0%{
+        width: 0;
+        opacity: 1;
+     }
+    100%{
+      opacity: 1;
+    }
+    }
+
+    .skill-per .tooltip{
+      position: absolute;
+      right: -14px;
+      top: -28px;
+      font-size: 9px  ;
+      color: #fff;
+      padding: 2px 6px;
+      border-radius: 20px;
+      background: #8749f2;
+      z-index: 1;
     }

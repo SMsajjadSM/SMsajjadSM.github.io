@@ -289,7 +289,7 @@ body.dark #moon {
 .typedText {
   font-family: sans-serif;
   color: #8749f2;
-  font-size: 8px;
+  font-size: 56px;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -417,15 +417,15 @@ i {
    }
    .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     gap: 50px;
    }
 
    .col{
     display: flex;
-    width: 50%;
-    flex-grow: 1;
+    width: 40%;
+  
    }
     .top-header{
       text-align: center;
@@ -444,6 +444,7 @@ i {
     .about-info{
       position: relative;
       display: flex;
+      justify-content: center;
       align-items: center;
       flex-direction: column;
       padding-block: 45px;

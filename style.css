@@ -792,6 +792,10 @@ color: var(--text-color);
   /* media query = 900px  */
 
   @media  screen and (max-width:900px){
+nav{
+width: 85%;
+padding: 0;
+}
  .nav-menu-btn{
   display: block;
  }
@@ -823,7 +827,7 @@ color: var(--text-color);
   color: #000;
  }
  .featured-box{
-  flex-direction: column !important;
+  flex-direction: column ;
   justify-content: center;
   height: 100vh;
  }
@@ -876,10 +880,13 @@ gap: 50px;
   margin-left:60% ;
 }
 
+
   }
-  @media only screen and(max-width:540px) {
+  @media only screen and (max-width:540px) {
+
     .featured-name{
       font-size: 40px;
+    }
       .project-box{
         width: 100%;
       }
@@ -887,10 +894,10 @@ gap: 50px;
         flex-direction: column;
       }
       .input-field{
-        width: 1005px;
+        width: 100%;
       }
       .mode{
         margin-left: 50%;
       }
-    }
+    
   }

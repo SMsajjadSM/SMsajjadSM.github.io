@@ -114,6 +114,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 :root {
   --body-color: rgba(250, 250, 250);
@@ -538,7 +539,7 @@ transition: all 0.25s ease;
 
     .skill-per.html{
       animation-delay: 0.1s;
-      width: 80%;
+      width: 85%;
       
     }    
     .skill-per.javascript{
@@ -548,12 +549,32 @@ transition: all 0.25s ease;
     }    
     .skill-per.css{
       animation-delay: 0.1s;
-      width: 80%;
+      width: 85%;
 
     }    
     .skill-per.react{
       animation-delay: 0.1s;
       width: 80%;
+
+    }
+    .skill-per.tailwind{
+      animation-delay: 0.1s;
+      width: 70%;
+
+    }
+    .skill-per.bootstrap{
+      animation-delay: 0.1s;
+      width: 50%;
+
+    }
+    .skill-per.english{
+      animation-delay: 0.1s;
+      width: 80%;
+
+    }
+    .skill-per.figma{
+      animation-delay: 0.1s;
+      width: 50%;
 
     }
      @keyframes progress{
@@ -774,7 +795,10 @@ color: var(--text-color);
     margin-top: 10px;
     color: var(--color-white);
   }
-
+.icon .uil{
+  color: black;
+  
+}
 
   /* media query = 1024px  */
 
